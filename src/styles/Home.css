@@ -1,0 +1,27 @@
+.home-container {
+  position: relative;
+  background-color: black;
+  color: white;
+}
+
+.section-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 100vh;
+}
+
+@media (max-width: 768px) {
+  .section-stack {
+    gap: 80vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-stack {
+    gap: 70vh;
+  }
+}
+
+.section-anchor {
+  scroll-margin-top: 20px;
+}

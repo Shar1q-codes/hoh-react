@@ -1,0 +1,116 @@
+.advisory-section {
+  position: relative;
+  min-height: 100vh;
+  background-color: black;
+  padding: 5rem 1rem;
+  overflow: hidden;
+}
+
+.advisory-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.bg-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, black, transparent, black);
+}
+
+.advisory-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.advisory-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.advisory-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.advisory-header p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+
+.advisory-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .advisory-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .advisory-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.advisory-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 1.5rem;
+  overflow: hidden;
+  color: white;
+}
+
+.advisory-img-box {
+  position: relative;
+  height: 260px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.advisory-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.advisory-card:hover .advisory-img {
+  transform: scale(1.1);
+}
+
+.advisory-card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.advisory-role {
+  font-size: 0.9rem;
+  color: gold;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.advisory-card p {
+  font-size: 1rem;
+  color: #cccccc;
+}

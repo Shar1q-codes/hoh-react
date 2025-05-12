@@ -1,0 +1,130 @@
+.guests-section {
+  position: relative;
+  min-height: 100vh;
+  background-color: black;
+  padding: 5rem 1rem;
+  overflow: hidden;
+}
+
+.guests-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.bg-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, black, transparent, black);
+}
+
+.guests-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.guests-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.guests-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.guests-header p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+
+.guests-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .guests-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.guest-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 1.5rem;
+  overflow: hidden;
+  color: white;
+}
+
+.guest-img-box {
+  position: relative;
+  height: 260px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.guest-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.guest-card:hover .guest-img {
+  transform: scale(1.1);
+}
+
+.guest-card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.guest-role {
+  font-size: 0.9rem;
+  color: gold;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.guest-card p {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.cta {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  padding: 0.9rem 2rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #f1f1f1;
+}

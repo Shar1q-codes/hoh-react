@@ -34,6 +34,18 @@ const App = () => {
             <WhatIsHoH />
           </ParallaxWrapper>
 
+          <ParallaxWrapper speed={0.25}>
+            <Jury />
+          </ParallaxWrapper>
+
+          <ParallaxWrapper speed={0.3}>
+            <Guests />
+          </ParallaxWrapper>
+
+          <ParallaxWrapper speed={0.25}>
+            <Advisory />
+          </ParallaxWrapper>
+
           <ParallaxWrapper speed={0.3}>
             <WhyNow />
           </ParallaxWrapper>
@@ -52,18 +64,6 @@ const App = () => {
 
           <ParallaxWrapper speed={0.3}>
             <NominateNow />
-          </ParallaxWrapper>
-
-          <ParallaxWrapper speed={0.25}>
-            <Jury />
-          </ParallaxWrapper>
-
-          <ParallaxWrapper speed={0.3}>
-            <Guests />
-          </ParallaxWrapper>
-
-          <ParallaxWrapper speed={0.25}>
-            <Advisory />
           </ParallaxWrapper>
 
           <ParallaxWrapper speed={0.2}>

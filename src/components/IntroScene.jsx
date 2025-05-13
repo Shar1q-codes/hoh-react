@@ -18,7 +18,7 @@ const IntroScene = () => {
       {/* Parallax Background */}
       <motion.div style={{ y }} className="intro-bg">
         <img
-          src="/assets/images/charminar.png"
+          src="/assets/images/charminar.jpeg"
           alt="Hyderabad Skyline"
           className="bg-img"
         />
